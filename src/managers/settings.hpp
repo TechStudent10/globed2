@@ -56,6 +56,7 @@ public:
         GSETTING(bool, deathEffects, true);
         GSETTING(bool, defaultDeathEffect, false);
         GSETTING(bool, hideNearby, false);
+        GSETTING(bool, forceVisibility, false);
     };
 
     struct Advanced {};
