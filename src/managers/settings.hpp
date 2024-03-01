@@ -37,6 +37,7 @@ public:
         GSETTING(bool, onlyFriends, false);
         GSETTING(bool, lowerAudioLatency, true);
         GSETTING(int, audioDevice, 0);
+        GSETTING(bool, deafenNotification, true); 
         GSETTING(bool, voiceLoopback, false); // TODO unimpl
     };
 

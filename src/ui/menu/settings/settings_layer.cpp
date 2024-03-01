@@ -194,6 +194,7 @@ CCArray* GlobedSettingsLayer::createSettingsCells(int category) {
         });
         MAKE_SETTING(communication, onlyFriends, "Only friends", "When enabled, you won't hear players that are not on your friend list in-game.");
         MAKE_SETTING(communication, lowerAudioLatency, "Lower audio latency", "Decreases the default audio buffer size by 2 times. Can cause issues on unstable connections.");
+        MAKE_SETTING(communication, deafenNotification, "Deafen notification", "Shows a notification when you deafen & undeafen.");
         MAKE_SETTING_TYPE(communication, audioDevice, Type::AudioDevice, "Audio device", "The input device used for recording your voice.");
         // MAKE_SETTING(communication, voiceLoopback, "Voice loopback", "When enabled, you will hear your own voice as you speak.");
     }
