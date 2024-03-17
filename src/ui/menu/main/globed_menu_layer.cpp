@@ -142,6 +142,7 @@ bool GlobedMenuLayer::init() {
     util::ui::prepareLayer(this);
 
     // this->schedule(schedule_selector(GlobedMenuLayer::refreshServerList), 0.1f);
+    CCScheduler::get()->scheduleSelector(schedule_selector(GlobedMenuLayer::refreshServerList), this, 0.1f, false);
     // this->schedule(schedule_selector(GlobedMenuLayer::pingServers), 5.0f);
 
     auto& gsm = GameServerManager::get();
