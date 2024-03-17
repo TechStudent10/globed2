@@ -223,6 +223,8 @@ namespace util::cocos {
             textureCache->m_pTextures->setObject(texture, imguard->at(idx).path);
             imguard.unlock();
 
+            log::debug("inited texture for {}: {}", imguard->at(idx).path, texture);
+
             texture->release();
             image->release();
         }
@@ -297,6 +299,7 @@ namespace util::cocos {
 
                     _addSpriteFramesWithDictionary(dict, imgState.texture);
                     static_cast<HookedGameManager*>(GameManager::get())->m_fields->loadedFrames.insert(plistKey);
+                    log::debug("added sprite frames forr {}", imgState.path);
                 }
 
                 dict->release();
