@@ -193,6 +193,7 @@ namespace util::cocos {
                     return;
                 }
 
+                log::debug("puhsing tex ini request");
                 textureInitRequests.push(std::make_pair(i, image));
             });
         }
@@ -201,9 +202,11 @@ namespace util::cocos {
         while (true) {
             if (textureInitRequests.empty()) {
                 if (threadPool.isDoingWork()) {
+                    log::debug("is empty yielding");
                     std::this_thread::yield();
                     continue;
                 } else if (textureInitRequests.empty()) {
+                    log::debug("is empty breaking");
                     break;
                 }
             }
