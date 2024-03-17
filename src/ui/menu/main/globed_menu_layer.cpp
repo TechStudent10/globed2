@@ -116,6 +116,7 @@ bool GlobedMenuLayer::init() {
     levelListButton = Build<CCSprite>::createSpriteName("icon-level-list.png"_spr)
         .intoMenuItem([](auto) {
             util::ui::switchToScene(GlobedLevelListLayer::create());
+            log::debug("wow switching");
         })
         .id("btn-open-level-list"_spr)
         .collect();
