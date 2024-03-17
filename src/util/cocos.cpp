@@ -143,10 +143,12 @@ namespace util::cocos {
             gd::string fullpath = fullPathForFilename(pathKey);
 
             if (fullpath.empty()) {
+                log::debug("fullpath for {} is empty, skipping", pathKey);
                 continue;
             }
 
             if (textureCache->m_pTextures->objectForKey(fullpath) != nullptr) {
+                log::debug("texture {} is already loaded, skipping", fullpath);
                 continue;
             }
 
