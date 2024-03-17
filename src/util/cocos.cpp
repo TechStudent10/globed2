@@ -80,10 +80,12 @@ namespace util::cocos {
                 state.texturePackIndices.push_back(idx);
             }
 
-            log::debug("p: {}", path);
-
 #ifdef GEODE_IS_ANDROID
             if (sv == "assets/") {
+                state.gameSearchPathIdx = idx;
+            }
+#elif defined(GEODE_IS_MACOS)
+            if (sv.empty()) {
                 state.gameSearchPathIdx = idx;
             }
 #else
