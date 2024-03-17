@@ -482,6 +482,7 @@ namespace util::cocos {
         // if cached, return the cached path
         auto cachedIt = fileUtils.getFullPathCache().find(filenameGd);
         if (cachedIt != fileUtils.getFullPathCache().end()) {
+            log::debug("returning cached: {}", cachedIt->second);
             return cachedIt->second;
         }
 
@@ -495,6 +496,7 @@ namespace util::cocos {
     auto _fp = getPathForFilename(newFilename, sp); \
     if (!_fp.empty()) { \
         fileUtils.getFullPathCache().insert(std::make_pair(std::move(filenameGd), std::move(_fp))); \
+        log::debug("returning successful: {}", _fp); \
         return _fp; \
     }
 
@@ -520,6 +522,7 @@ namespace util::cocos {
         // if all else fails, accept our defeat.
         log::warn("fullPathForFilename failed to find full path for: {}", rawfilename);
         log::warn("attempted transformed path was {}", newFilename);
+        log::debug("just returning {}", filenameGd);
 
         return filenameGd;
     }
