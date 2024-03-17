@@ -11,8 +11,10 @@ class $modify(HookedLevelBrowserLayer, LevelBrowserLayer) {
     $override
     void setupLevelBrowser(cocos2d::CCArray* p0);
 
+#ifndef GEODE_IS_MACOS
     $override
     void destructor();
+#endif
 
     void refreshPagePlayerCounts();
     void updatePlayerCounts(float);

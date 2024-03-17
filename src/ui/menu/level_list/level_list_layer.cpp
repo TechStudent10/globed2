@@ -14,6 +14,8 @@ GlobedSettings& settings = GlobedSettings::get();
 bool GlobedLevelListLayer::init() {
     if (!CCLayer::init()) return false;
 
+    log::debug("p1");
+
     auto winSize = CCDirector::get()->getWinSize();
 
     auto listview = Build<ListView>::create(CCArray::create(), 0.f, LIST_WIDTH, LIST_HEIGHT)
@@ -26,6 +28,7 @@ bool GlobedLevelListLayer::init() {
         .id("level-list"_spr)
         .store(listLayer);
 
+    log::debug("p2");
     // refresh button
     Build<CCSprite>::createSpriteName("GJ_updateBtn_001.png")
         .intoMenuItem([this](auto) {
@@ -38,6 +41,7 @@ bool GlobedLevelListLayer::init() {
 
     constexpr float pageBtnPadding = 20.f;
 
+    log::debug("p3");
     // pages buttons
     Build<CCSprite>::createSpriteName("GJ_arrow_03_001.png")
         .intoMenuItem([this](auto) {
@@ -50,6 +54,7 @@ bool GlobedLevelListLayer::init() {
         .pos(0.f, 0.f)
         .parent(this);
 
+    log::debug("p4");
     CCSprite* btnSprite;
     Build<CCSprite>::createSpriteName("GJ_arrow_03_001.png")
         .store(btnSprite)
@@ -67,8 +72,10 @@ bool GlobedLevelListLayer::init() {
 
     listLayer->setPosition(winSize / 2 - listLayer->getScaledContentSize() / 2);
 
+    log::debug("p5");
     util::ui::prepareLayer(this);
 
+    log::debug("p6");
     NetworkManager::get().addListener<LevelListPacket>([this](std::shared_ptr<LevelListPacket> packet) {
         this->levelList.clear();
         this->levelPages.clear();
@@ -95,7 +102,10 @@ bool GlobedLevelListLayer::init() {
         this->reloadPage();
     });
 
+    log::debug("p7");
+
     this->refreshLevels();
+    log::debug("p8");
 
     return true;
 }
@@ -265,18 +275,25 @@ void GlobedLevelListLayer::setupPageInfo(gd::string p0, const char* p1) {}
 void GlobedLevelListLayer::refreshLevels() {
     if (loading) return;
 
+    log::debug("i1");
+
+
     loading = true;
     btnPagePrev->setVisible(false);
     btnPageNext->setVisible(false);
 
+    log::debug("i2");
     auto& nm = NetworkManager::get();
     if (!nm.established()) return;
 
+    log::debug("i3");
     // request the level list from the server
     nm.send(RequestLevelListPacket::create());
 
+    log::debug("i4");
     // remove existing listview and put a loading circle
     this->showLoadingUi();
+    log::debug("i5");
 }
 
 void GlobedLevelListLayer::keyBackClicked() {

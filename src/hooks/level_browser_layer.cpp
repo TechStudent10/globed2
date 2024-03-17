@@ -74,6 +74,7 @@ void HookedLevelBrowserLayer::updatePlayerCounts(float) {
     }
 }
 
+#ifndef GEODE_IS_MACOS
 void HookedLevelBrowserLayer::destructor() {
     LevelBrowserLayer::~LevelBrowserLayer();
 
@@ -83,3 +84,4 @@ void HookedLevelBrowserLayer::destructor() {
     auto& nm = NetworkManager::get();
     nm.removeListener<LevelPlayerCountPacket>(util::time::seconds(3));
 }
+#endif
