@@ -163,6 +163,14 @@ bool RoomPopup::setup() {
         .pos(popupLayout.bottomLeft)
         .parent(m_mainLayer);
 
+    // invisibility toggle
+    Build<CCMenuItemToggler>(CCMenuItemToggler::createWithStandardSprites(this, menu_selector(RoomPopup::setInvisible), 1.0f))
+        .id("invis-checkbox"_spr)
+        .store(invisCheckbox)
+        .parent(buttonMenu);
+
+    invisCheckbox->toggle(GlobedSettings::get().globed.isInvisible);
+
     buttonMenu->updateLayout();
 
     this->recreateInviteButton();
@@ -171,6 +179,10 @@ bool RoomPopup::setup() {
     this->reloadPlayerList();
 
     return true;
+}
+
+void RoomPopup::setInvisible(CCObject* sender) {
+    GlobedSettings::get().globed.isInvisible = !invisCheckbox->isOn();
 }
 
 void RoomPopup::update(float) {

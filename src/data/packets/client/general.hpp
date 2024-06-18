@@ -40,3 +40,14 @@ class RequestPlayerCountPacket : public Packet {
 };
 
 GLOBED_SERIALIZABLE_STRUCT(RequestPlayerCountPacket, (levelIds));
+
+class SetPlayerToInvisiblePacket : public Packet{
+    GLOBED_PACKET(11004, SetPlayerToInvisiblePacket, false, false);
+
+    SetPlayerToInvisiblePacket() {}
+    SetPlayerToInvisiblePacket(bool is_invisible) : is_invisible(is_invisible) {}
+
+    bool is_invisible;
+};
+
+GLOBED_SERIALIZABLE_STRUCT(SetPlayerToInvisiblePacket, (is_invisible));

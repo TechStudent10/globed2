@@ -36,6 +36,8 @@ constexpr float VOICE_OVERLAY_PAD_Y = 20.f;
 bool GlobedGJBGL::init() {
     if (!GJBaseGameLayer::init()) return false;
 
+    NetworkManager::get().send(SetPlayerToInvisiblePacket::create(true));
+
     // yeah so like
 
     auto* gm = static_cast<HookedGameManager*>(GameManager::get());

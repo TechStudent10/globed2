@@ -284,6 +284,32 @@ impl GameServer {
     }
 
     #[inline]
+    pub fn for_every_visible_room_player_preview<F, A>(&self, room_id: u32, f: F, additional: &mut A) -> usize
+    where
+        F: Fn(&PlayerRoomPreviewAccountData, usize, &mut A) -> bool,
+    {
+        self.threads
+            .lock()
+            .values()
+            .filter(|thr|
+                thr.authenticated() &&
+                thr.room_id.load(Ordering::Relaxed) == room_id &&
+                (room_id == 0 && !thr.is_invisible.load(Ordering::Relaxed))
+            )
+            .map(|thread| {
+                let mut level_id = thread.level_id.load(Ordering::Relaxed);
+
+                // if they are in editorcollab, show no level
+                if is_editorcollab_level(level_id) {
+                    level_id = 0;
+                }
+
+                thread.account_data.lock().make_room_preview(level_id)
+            })
+            .fold(0, |count, preview| count + usize::from(f(&preview, count, additional)))
+    }
+
+    #[inline]
     pub fn for_every_room_player_preview<F, A>(&self, room_id: u32, f: F, additional: &mut A) -> usize
     where
         F: Fn(&PlayerRoomPreviewAccountData, usize, &mut A) -> bool,
@@ -291,7 +317,10 @@ impl GameServer {
         self.threads
             .lock()
             .values()
-            .filter(|thr| thr.authenticated() && thr.room_id.load(Ordering::Relaxed) == room_id)
+            .filter(|thr|
+                thr.authenticated() &&
+                thr.room_id.load(Ordering::Relaxed) == room_id
+            )
             .map(|thread| {
                 let mut level_id = thread.level_id.load(Ordering::Relaxed);
 
@@ -331,6 +360,24 @@ impl GameServer {
         let mut vec = Vec::with_capacity(player_count);
 
         self.for_every_room_player_preview(
+            room_id,
+            |p, _, vec| {
+                vec.push(p.clone());
+                true
+            },
+            &mut vec,
+        );
+
+        vec
+    }
+
+    #[inline]
+    pub fn get_visible_room_player_previews(&self, room_id: u32) -> Vec<PlayerRoomPreviewAccountData> {
+        let player_count = self.state.room_manager.with_any(room_id, |room| room.manager.get_total_player_count());
+
+        let mut vec = Vec::with_capacity(player_count);
+
+        self.for_every_visible_room_player_preview(
             room_id,
             |p, _, vec| {
                 vec.push(p.clone());

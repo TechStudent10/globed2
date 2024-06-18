@@ -63,4 +63,12 @@ impl GameServerThread {
 
         self.send_packet_dynamic(&LevelPlayerCountPacket { levels }).await
     });
+
+    gs_handler!(self, handle_set_player_to_invisible, SetPlayerToInvisiblePacket, packet, {
+        let _ = gs_needauth!(self);
+
+        self.is_invisible.store(packet.is_invisible.into(), Ordering::Relaxed);
+
+        Ok(())
+    });
 }

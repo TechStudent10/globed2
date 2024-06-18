@@ -22,6 +22,7 @@ protected:
     cocos2d::CCMenu* buttonMenu;
     Ref<CCMenuItemSpriteExtra> clearSearchButton, settingsButton, inviteButton;
     cocos2d::CCNode* roomIdButton = nullptr;
+    CCMenuItemToggler* invisCheckbox;
 
     cocos2d::CCMenu* roomBtnMenu = nullptr;
     bool isWaiting = false;
@@ -37,4 +38,5 @@ protected:
     void setRoomTitle(std::string name, uint32_t id);
     void onCopyRoomId(cocos2d::CCObject*);
     void recreateInviteButton();
+    void setInvisible(cocos2d::CCObject*);
 };

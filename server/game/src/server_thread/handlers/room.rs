@@ -222,9 +222,16 @@ impl GameServerThread {
             .room_manager
             .with_any(room_id, |room| room.get_room_info(room_id, self.game_server));
 
+        let players: Vec<PlayerRoomPreviewAccountData>;
+        if self.user_role.lock().can_moderate() {
+            players = self.game_server.get_room_player_previews(room_id)
+        } else {
+            players = self.game_server.get_visible_room_player_previews(room_id)
+        }
+        
         self.send_packet_dynamic(&RoomPlayerListPacket {
             room_info,
-            players: self.game_server.get_room_player_previews(room_id),
+            players: players,
         })
         .await
     }

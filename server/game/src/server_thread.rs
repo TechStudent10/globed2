@@ -79,6 +79,7 @@ pub struct GameServerThread {
     pub account_data: SyncMutex<PlayerAccountData>,
     pub user_entry: SyncMutex<UserEntry>,
     pub user_role: SyncMutex<ComputedRole>,
+    pub is_invisible: AtomicBool,
 
     pub cleanup_notify: Notify,
     pub cleanup_mutex: Mutex<()>,
@@ -128,6 +129,7 @@ impl GameServerThread {
             account_data: SyncMutex::new(PlayerAccountData::default()),
             user_entry: SyncMutex::new(UserEntry::default()),
             user_role: SyncMutex::new(game_server.state.role_manager.get_default().clone()),
+            is_invisible: AtomicBool::new(false),
             cleanup_notify: Notify::new(),
             cleanup_mutex: Mutex::new(()),
             fragmentation_limit: AtomicU16::new(0),
@@ -522,6 +524,7 @@ impl GameServerThread {
             RequestGlobalPlayerListPacket::PACKET_ID => self.handle_request_global_list(&mut data).await,
             RequestLevelListPacket::PACKET_ID => self.handle_request_level_list(&mut data).await,
             RequestPlayerCountPacket::PACKET_ID => self.handle_request_player_count(&mut data).await,
+            SetPlayerToInvisiblePacket::PACKET_ID => self.handle_set_player_to_invisible(&mut data).await,
 
             /* game related */
             RequestPlayerProfilesPacket::PACKET_ID => self.handle_request_profiles(&mut data).await,

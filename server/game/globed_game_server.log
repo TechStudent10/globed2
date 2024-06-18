@@ -1,0 +1,273 @@
+[2024-05-30 16:37:41.492] [WARN] - Starting in standalone mode, authentication is disabled
+[2024-05-30 16:37:41.492] [WARN] - Note: use Direct Connection option in-game to connect, Add Server cannot be used.
+[2024-05-30 16:37:41.494] [DEBUG] - Configuration:
+[2024-05-30 16:37:41.494] [DEBUG] - * TPS: 30
+[2024-05-30 16:37:41.494] [DEBUG] - * Token expiry: 0 seconds
+[2024-05-30 16:37:41.494] [DEBUG] - * Maintenance: no
+[2024-05-30 16:37:41.494] [DEBUG] - * Token secret key: ''
+[2024-05-30 16:37:41.494] [DEBUG] - * Admin key: 'rno4ErneTZ9imPGFmKeqk8aH0UmpUU5Y'
+[2024-05-30 16:37:41.494] [DEBUG] - * Text chat ratelimit: disabled
+[2024-05-30 16:37:41.533] [INFO] - Server launched on 0.0.0.0:41001 (version: 1.4.0)
+[2024-05-30 16:38:13.087] [DEBUG] - accepting tcp connection from 127.0.0.1:41386
+[2024-05-30 16:38:13.088] [TRACE] - [127.0.0.1:41386] Handling packet CryptoHandshakeStartPacket
+[2024-05-30 16:38:13.092] [TRACE] - [127.0.0.1:41386] Sending packet CryptoHandshakeResponsePacket (fast)
+[2024-05-30 16:38:13.236] [TRACE] - [127.0.0.1:41386] Handling packet LoginPacket
+[2024-05-30 16:38:13.236] [INFO] - [TechStudent11 (20284359) @ 127.0.0.1:41386] Login successful, platform: Windows x86 (v1.4.0-beta.1, Geode v2.0.0-beta.27)
+[2024-05-30 16:38:13.236] [TRACE] - [TechStudent11 @ 127.0.0.1:41386] Sending packet LoggedInPacket (fast)
+[2024-05-30 16:38:13.461] [TRACE] - [TechStudent11 @ 127.0.0.1:41386] Handling packet KeepaliveTCPPacket
+[2024-05-30 16:38:13.462] [TRACE] - [TechStudent11 @ 127.0.0.1:41386] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 16:38:27.640] [TRACE] - [TechStudent11 @ 127.0.0.1:41386] Handling packet RequestRoomPlayerListPacket
+[2024-05-30 16:38:27.640] [TRACE] - [TechStudent11 @ 127.0.0.1:41386] Sending packet RoomPlayerListPacket (fast)
+[2024-05-30 16:38:32.925] [TRACE] - [TechStudent11 @ 127.0.0.1:41386] Handling packet RequestPlayerCountPacket
+[2024-05-30 16:38:32.925] [TRACE] - [TechStudent11 @ 127.0.0.1:41386] Sending packet LevelPlayerCountPacket (fast)
+[2024-05-30 16:38:35.405] [TRACE] - [TechStudent11 @ 127.0.0.1:41386] Handling packet SetPlayerToInvisiblePacket
+[2024-05-30 16:38:35.832] [TRACE] - [TechStudent11 @ 127.0.0.1:41386] Handling packet LevelJoinPacket
+[2024-05-30 16:38:36.084] [TRACE] - [TechStudent11 @ 127.0.0.1:41386] Handling packet RequestPlayerProfilesPacket
+[2024-05-30 16:38:36.085] [TRACE] - [TechStudent11 @ 127.0.0.1:41386] Sending packet PlayerProfilesPacket (fast)
+[2024-05-30 16:38:36.086] [TRACE] - [TechStudent11 @ 127.0.0.1:41386] Handling packet PlayerMetadataPacket
+[2024-05-30 16:38:36.086] [TRACE] - [TechStudent11 @ 127.0.0.1:41386] Sending packet LevelPlayerMetadataPacket (fast)
+[2024-05-30 16:38:36.356] [TRACE] - [TechStudent11 @ 127.0.0.1:41386] Handling packet PlayerDataPacket
+[2024-05-30 16:38:37.583] [TRACE] - [TechStudent11 @ 127.0.0.1:41386] Handling packet PlayerDataPacket
+[2024-05-30 16:38:38.015] [TRACE] - [TechStudent11 @ 127.0.0.1:41386] Handling packet RequestPlayerCountPacket
+[2024-05-30 16:38:38.016] [TRACE] - [TechStudent11 @ 127.0.0.1:41386] Sending packet LevelPlayerCountPacket (fast)
+[2024-05-30 16:38:38.016] [TRACE] - [TechStudent11 @ 127.0.0.1:41386] Handling packet LevelLeavePacket
+[2024-05-30 16:38:42.606] [TRACE] - [TechStudent11 @ 127.0.0.1:41386] Handling packet RequestRoomPlayerListPacket
+[2024-05-30 16:38:42.607] [TRACE] - [TechStudent11 @ 127.0.0.1:41386] Sending packet RoomPlayerListPacket (fast)
+[2024-05-30 16:38:46.321] [TRACE] - [TechStudent11 @ 127.0.0.1:41386] Handling packet CreateRoomPacket
+[2024-05-30 16:38:46.321] [TRACE] - [TechStudent11 @ 127.0.0.1:41386] Sending packet RoomCreatedPacket (fast)
+[2024-05-30 16:38:47.487] [TRACE] - [TechStudent11 @ 127.0.0.1:41386] Handling packet LeaveRoomPacket
+[2024-05-30 16:38:47.487] [TRACE] - [TechStudent11 @ 127.0.0.1:41386] Sending packet RoomPlayerListPacket (fast)
+[2024-05-30 16:38:53.379] [TRACE] - [TechStudent11 @ 127.0.0.1:41386] Handling packet DisconnectPacket (sync)
+[2024-05-30 16:38:53.381] [DEBUG] - removing client: 127.0.0.1:41386
+[2024-05-30 16:41:19.855] [DEBUG] - accepting tcp connection from 127.0.0.1:57436
+[2024-05-30 16:41:19.859] [TRACE] - [127.0.0.1:57436] Handling packet CryptoHandshakeStartPacket
+[2024-05-30 16:41:19.863] [TRACE] - [127.0.0.1:57436] Sending packet CryptoHandshakeResponsePacket (fast)
+[2024-05-30 16:41:19.981] [TRACE] - [127.0.0.1:57436] Handling packet LoginPacket
+[2024-05-30 16:41:19.981] [INFO] - [TechStudent11 (20284359) @ 127.0.0.1:57436] Login successful, platform: Windows x86 (v1.4.0-beta.1, Geode v2.0.0-beta.27)
+[2024-05-30 16:41:19.981] [TRACE] - [TechStudent11 @ 127.0.0.1:57436] Sending packet LoggedInPacket (fast)
+[2024-05-30 16:41:20.185] [TRACE] - [TechStudent11 @ 127.0.0.1:57436] Handling packet KeepaliveTCPPacket
+[2024-05-30 16:41:20.189] [TRACE] - [TechStudent11 @ 127.0.0.1:57436] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 16:42:20.249] [TRACE] - [TechStudent11 @ 127.0.0.1:57436] Handling packet KeepaliveTCPPacket
+[2024-05-30 16:42:20.249] [TRACE] - [TechStudent11 @ 127.0.0.1:57436] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 16:43:20.429] [TRACE] - [TechStudent11 @ 127.0.0.1:57436] Handling packet KeepaliveTCPPacket
+[2024-05-30 16:43:20.429] [TRACE] - [TechStudent11 @ 127.0.0.1:57436] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 16:43:45.110] [TRACE] - [TechStudent11 @ 127.0.0.1:57436] Handling packet RequestRoomPlayerListPacket
+[2024-05-30 16:43:45.111] [TRACE] - [TechStudent11 @ 127.0.0.1:57436] Sending packet RoomPlayerListPacket (fast)
+[2024-05-30 16:44:20.432] [TRACE] - [TechStudent11 @ 127.0.0.1:57436] Handling packet KeepaliveTCPPacket
+[2024-05-30 16:44:20.433] [TRACE] - [TechStudent11 @ 127.0.0.1:57436] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 16:45:20.530] [TRACE] - [TechStudent11 @ 127.0.0.1:57436] Handling packet KeepaliveTCPPacket
+[2024-05-30 16:45:20.531] [TRACE] - [TechStudent11 @ 127.0.0.1:57436] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 16:46:20.699] [TRACE] - [TechStudent11 @ 127.0.0.1:57436] Handling packet KeepaliveTCPPacket
+[2024-05-30 16:46:20.701] [TRACE] - [TechStudent11 @ 127.0.0.1:57436] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 16:49:01.930] [TRACE] - [TechStudent11 @ 127.0.0.1:57436] Handling packet KeepaliveTCPPacket
+[2024-05-30 16:49:01.930] [TRACE] - [TechStudent11 @ 127.0.0.1:57436] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 16:50:02.032] [TRACE] - [TechStudent11 @ 127.0.0.1:57436] Handling packet KeepaliveTCPPacket
+[2024-05-30 16:50:02.033] [TRACE] - [TechStudent11 @ 127.0.0.1:57436] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 16:51:02.079] [TRACE] - [TechStudent11 @ 127.0.0.1:57436] Handling packet KeepaliveTCPPacket
+[2024-05-30 16:51:02.080] [TRACE] - [TechStudent11 @ 127.0.0.1:57436] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 16:52:02.122] [TRACE] - [TechStudent11 @ 127.0.0.1:57436] Handling packet KeepaliveTCPPacket
+[2024-05-30 16:52:02.122] [TRACE] - [TechStudent11 @ 127.0.0.1:57436] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 16:53:02.179] [TRACE] - [TechStudent11 @ 127.0.0.1:57436] Handling packet KeepaliveTCPPacket
+[2024-05-30 16:53:02.179] [TRACE] - [TechStudent11 @ 127.0.0.1:57436] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 16:54:01.279] [TRACE] - [TechStudent11 @ 127.0.0.1:57436] Handling packet DisconnectPacket (sync)
+[2024-05-30 16:54:01.279] [DEBUG] - removing client: 127.0.0.1:57436
+[2024-05-30 16:54:22.535] [INFO] - Current server stats
+[2024-05-30 16:54:22.536] [INFO] - Player count: 0 (threads: 0, unclaimed: 0)
+[2024-05-30 16:54:22.537] [INFO] - Amount of rooms: 0
+[2024-05-30 16:54:22.537] [INFO] - People in the global room: 0
+[2024-05-30 16:54:22.537] [INFO] - -------------------------------------------
+[2024-05-30 17:09:22.535] [INFO] - Current server stats
+[2024-05-30 17:09:22.535] [INFO] - Player count: 0 (threads: 0, unclaimed: 0)
+[2024-05-30 17:09:22.536] [INFO] - Amount of rooms: 0
+[2024-05-30 17:09:22.536] [INFO] - People in the global room: 0
+[2024-05-30 17:09:22.536] [INFO] - -------------------------------------------
+[2024-05-30 17:31:53.960] [INFO] - Current server stats
+[2024-05-30 17:31:53.960] [INFO] - Player count: 0 (threads: 0, unclaimed: 0)
+[2024-05-30 17:31:53.960] [INFO] - Amount of rooms: 0
+[2024-05-30 17:31:53.960] [INFO] - People in the global room: 0
+[2024-05-30 17:31:53.960] [INFO] - -------------------------------------------
+[2024-05-30 18:11:05.736] [DEBUG] - accepting tcp connection from 127.0.0.1:53976
+[2024-05-30 18:11:05.740] [TRACE] - [127.0.0.1:53976] Handling packet CryptoHandshakeStartPacket
+[2024-05-30 18:11:05.743] [TRACE] - [127.0.0.1:53976] Sending packet CryptoHandshakeResponsePacket (fast)
+[2024-05-30 18:11:05.995] [TRACE] - [127.0.0.1:53976] Handling packet LoginPacket
+[2024-05-30 18:11:05.995] [INFO] - [TechStudent11 (20284359) @ 127.0.0.1:53976] Login successful, platform: Windows x86 (v1.4.0-beta.1, Geode v2.0.0-beta.27)
+[2024-05-30 18:11:05.995] [TRACE] - [TechStudent11 @ 127.0.0.1:53976] Sending packet LoggedInPacket (fast)
+[2024-05-30 18:11:06.200] [TRACE] - [TechStudent11 @ 127.0.0.1:53976] Handling packet KeepaliveTCPPacket
+[2024-05-30 18:11:06.203] [TRACE] - [TechStudent11 @ 127.0.0.1:53976] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 18:11:16.940] [TRACE] - [TechStudent11 @ 127.0.0.1:53976] Handling packet RequestRoomPlayerListPacket
+[2024-05-30 18:11:16.941] [TRACE] - [TechStudent11 @ 127.0.0.1:53976] Sending packet RoomPlayerListPacket (fast)
+[2024-05-30 18:12:06.217] [TRACE] - [TechStudent11 @ 127.0.0.1:53976] Handling packet KeepaliveTCPPacket
+[2024-05-30 18:12:06.222] [TRACE] - [TechStudent11 @ 127.0.0.1:53976] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 18:13:06.398] [TRACE] - [TechStudent11 @ 127.0.0.1:53976] Handling packet KeepaliveTCPPacket
+[2024-05-30 18:13:06.400] [TRACE] - [TechStudent11 @ 127.0.0.1:53976] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 18:14:06.492] [TRACE] - [TechStudent11 @ 127.0.0.1:53976] Handling packet KeepaliveTCPPacket
+[2024-05-30 18:14:06.493] [TRACE] - [TechStudent11 @ 127.0.0.1:53976] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 18:15:06.650] [TRACE] - [TechStudent11 @ 127.0.0.1:53976] Handling packet KeepaliveTCPPacket
+[2024-05-30 18:15:06.650] [TRACE] - [TechStudent11 @ 127.0.0.1:53976] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 18:16:06.765] [TRACE] - [TechStudent11 @ 127.0.0.1:53976] Handling packet KeepaliveTCPPacket
+[2024-05-30 18:16:06.768] [TRACE] - [TechStudent11 @ 127.0.0.1:53976] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 18:17:06.875] [TRACE] - [TechStudent11 @ 127.0.0.1:53976] Handling packet KeepaliveTCPPacket
+[2024-05-30 18:17:06.876] [TRACE] - [TechStudent11 @ 127.0.0.1:53976] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 18:18:06.942] [TRACE] - [TechStudent11 @ 127.0.0.1:53976] Handling packet KeepaliveTCPPacket
+[2024-05-30 18:18:06.942] [TRACE] - [TechStudent11 @ 127.0.0.1:53976] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 18:19:06.975] [TRACE] - [TechStudent11 @ 127.0.0.1:53976] Handling packet KeepaliveTCPPacket
+[2024-05-30 18:19:06.977] [TRACE] - [TechStudent11 @ 127.0.0.1:53976] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 18:20:07.007] [TRACE] - [TechStudent11 @ 127.0.0.1:53976] Handling packet KeepaliveTCPPacket
+[2024-05-30 18:20:07.010] [TRACE] - [TechStudent11 @ 127.0.0.1:53976] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 18:21:07.075] [TRACE] - [TechStudent11 @ 127.0.0.1:53976] Handling packet KeepaliveTCPPacket
+[2024-05-30 18:21:07.075] [TRACE] - [TechStudent11 @ 127.0.0.1:53976] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 18:21:47.151] [TRACE] - [TechStudent11 @ 127.0.0.1:53976] Handling packet RequestPlayerCountPacket
+[2024-05-30 18:21:47.151] [TRACE] - [TechStudent11 @ 127.0.0.1:53976] Sending packet LevelPlayerCountPacket (fast)
+[2024-05-30 18:21:47.221] [TRACE] - [TechStudent11 @ 127.0.0.1:53976] Handling packet DisconnectPacket (sync)
+[2024-05-30 18:21:47.221] [DEBUG] - removing client: 127.0.0.1:53976
+[2024-05-30 18:43:54.838] [INFO] - Current server stats
+[2024-05-30 18:43:54.838] [INFO] - Player count: 0 (threads: 0, unclaimed: 0)
+[2024-05-30 18:43:54.838] [INFO] - Amount of rooms: 0
+[2024-05-30 18:43:54.838] [INFO] - People in the global room: 0
+[2024-05-30 18:43:54.838] [INFO] - -------------------------------------------
+[2024-05-30 19:24:12.850] [DEBUG] - accepting tcp connection from 127.0.0.1:52968
+[2024-05-30 19:24:12.851] [TRACE] - [127.0.0.1:52968] Handling packet CryptoHandshakeStartPacket
+[2024-05-30 19:24:12.852] [TRACE] - [127.0.0.1:52968] Sending packet CryptoHandshakeResponsePacket (fast)
+[2024-05-30 19:24:12.967] [TRACE] - [127.0.0.1:52968] Handling packet LoginPacket
+[2024-05-30 19:24:12.968] [INFO] - [TechStudent11 (20284359) @ 127.0.0.1:52968] Login successful, platform: Windows x86 (v1.4.0-beta.1, Geode v2.0.0-beta.27)
+[2024-05-30 19:24:12.968] [TRACE] - [TechStudent11 @ 127.0.0.1:52968] Sending packet LoggedInPacket (fast)
+[2024-05-30 19:24:13.177] [TRACE] - [TechStudent11 @ 127.0.0.1:52968] Handling packet KeepaliveTCPPacket
+[2024-05-30 19:24:13.177] [TRACE] - [TechStudent11 @ 127.0.0.1:52968] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 19:24:15.217] [TRACE] - [TechStudent11 @ 127.0.0.1:52968] Handling packet RequestRoomPlayerListPacket
+[2024-05-30 19:24:15.217] [TRACE] - [TechStudent11 @ 127.0.0.1:52968] Sending packet RoomPlayerListPacket (fast)
+[2024-05-30 19:24:36.195] [TRACE] - [TechStudent11 @ 127.0.0.1:52968] Handling packet RequestRoomPlayerListPacket
+[2024-05-30 19:24:36.196] [TRACE] - [TechStudent11 @ 127.0.0.1:52968] Sending packet RoomPlayerListPacket (fast)
+[2024-05-30 19:24:39.541] [TRACE] - [TechStudent11 @ 127.0.0.1:52968] Handling packet DisconnectPacket (sync)
+[2024-05-30 19:24:39.541] [DEBUG] - removing client: 127.0.0.1:52968
+[2024-05-30 19:31:46.004] [INFO] - Current server stats
+[2024-05-30 19:31:46.004] [INFO] - Player count: 0 (threads: 0, unclaimed: 0)
+[2024-05-30 19:31:46.004] [INFO] - Amount of rooms: 0
+[2024-05-30 19:31:46.004] [INFO] - People in the global room: 0
+[2024-05-30 19:31:46.005] [INFO] - -------------------------------------------
+[2024-05-30 19:52:18.799] [INFO] - Current server stats
+[2024-05-30 19:52:18.799] [INFO] - Player count: 0 (threads: 0, unclaimed: 0)
+[2024-05-30 19:52:18.799] [INFO] - Amount of rooms: 0
+[2024-05-30 19:52:18.799] [INFO] - People in the global room: 0
+[2024-05-30 19:52:18.799] [INFO] - -------------------------------------------
+[2024-05-30 21:43:23.865] [INFO] - Current server stats
+[2024-05-30 21:43:23.865] [INFO] - Player count: 0 (threads: 0, unclaimed: 0)
+[2024-05-30 21:43:23.865] [INFO] - Amount of rooms: 0
+[2024-05-30 21:43:23.865] [INFO] - People in the global room: 0
+[2024-05-30 21:43:23.865] [INFO] - -------------------------------------------
+[2024-05-30 21:45:27.436] [DEBUG] - accepting tcp connection from 127.0.0.1:40434
+[2024-05-30 21:45:27.437] [TRACE] - [127.0.0.1:40434] Handling packet CryptoHandshakeStartPacket
+[2024-05-30 21:45:27.438] [TRACE] - [127.0.0.1:40434] Sending packet CryptoHandshakeResponsePacket (fast)
+[2024-05-30 21:45:27.526] [TRACE] - [127.0.0.1:40434] Handling packet LoginPacket
+[2024-05-30 21:45:27.526] [INFO] - [TechStudent11 (20284359) @ 127.0.0.1:40434] Login successful, platform: Windows x86 (v1.4.0-beta.1, Geode v2.0.0-beta.27)
+[2024-05-30 21:45:27.527] [TRACE] - [TechStudent11 @ 127.0.0.1:40434] Sending packet LoggedInPacket (fast)
+[2024-05-30 21:45:27.733] [TRACE] - [TechStudent11 @ 127.0.0.1:40434] Handling packet KeepaliveTCPPacket
+[2024-05-30 21:45:27.733] [TRACE] - [TechStudent11 @ 127.0.0.1:40434] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 21:45:32.681] [TRACE] - [TechStudent11 @ 127.0.0.1:40434] Handling packet RequestRoomPlayerListPacket
+[2024-05-30 21:45:32.681] [TRACE] - [TechStudent11 @ 127.0.0.1:40434] Sending packet RoomPlayerListPacket (fast)
+[2024-05-30 21:45:34.839] [TRACE] - [TechStudent11 @ 127.0.0.1:40434] Handling packet RequestRoomPlayerListPacket
+[2024-05-30 21:45:34.840] [TRACE] - [TechStudent11 @ 127.0.0.1:40434] Sending packet RoomPlayerListPacket (fast)
+[2024-05-30 21:46:26.137] [TRACE] - [TechStudent11 @ 127.0.0.1:40434] Handling packet DisconnectPacket (sync)
+[2024-05-30 21:46:26.137] [DEBUG] - removing client: 127.0.0.1:40434
+[2024-05-30 21:49:48.051] [DEBUG] - accepting tcp connection from 127.0.0.1:49886
+[2024-05-30 21:49:48.052] [TRACE] - [127.0.0.1:49886] Handling packet CryptoHandshakeStartPacket
+[2024-05-30 21:49:48.054] [TRACE] - [127.0.0.1:49886] Sending packet CryptoHandshakeResponsePacket (fast)
+[2024-05-30 21:49:48.134] [TRACE] - [127.0.0.1:49886] Handling packet LoginPacket
+[2024-05-30 21:49:48.136] [INFO] - [TechStudent11 (20284359) @ 127.0.0.1:49886] Login successful, platform: Windows x86 (v1.4.0-beta.1, Geode v2.0.0-beta.27)
+[2024-05-30 21:49:48.139] [TRACE] - [TechStudent11 @ 127.0.0.1:49886] Sending packet LoggedInPacket (fast)
+[2024-05-30 21:49:48.342] [TRACE] - [TechStudent11 @ 127.0.0.1:49886] Handling packet KeepaliveTCPPacket
+[2024-05-30 21:49:48.343] [TRACE] - [TechStudent11 @ 127.0.0.1:49886] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 21:49:51.212] [TRACE] - [TechStudent11 @ 127.0.0.1:49886] Handling packet RequestRoomPlayerListPacket
+[2024-05-30 21:49:51.214] [TRACE] - [TechStudent11 @ 127.0.0.1:49886] Sending packet RoomPlayerListPacket (fast)
+[2024-05-30 21:49:58.246] [DEBUG] - removing client: 127.0.0.1:49886
+[2024-05-30 21:51:07.060] [DEBUG] - accepting tcp connection from 127.0.0.1:50872
+[2024-05-30 21:51:07.062] [TRACE] - [127.0.0.1:50872] Handling packet CryptoHandshakeStartPacket
+[2024-05-30 21:51:07.063] [TRACE] - [127.0.0.1:50872] Sending packet CryptoHandshakeResponsePacket (fast)
+[2024-05-30 21:51:07.146] [TRACE] - [127.0.0.1:50872] Handling packet LoginPacket
+[2024-05-30 21:51:07.146] [INFO] - [TechStudent11 (20284359) @ 127.0.0.1:50872] Login successful, platform: Windows x86 (v1.4.0-beta.1, Geode v2.0.0-beta.27)
+[2024-05-30 21:51:07.146] [TRACE] - [TechStudent11 @ 127.0.0.1:50872] Sending packet LoggedInPacket (fast)
+[2024-05-30 21:51:07.352] [TRACE] - [TechStudent11 @ 127.0.0.1:50872] Handling packet KeepaliveTCPPacket
+[2024-05-30 21:51:07.353] [TRACE] - [TechStudent11 @ 127.0.0.1:50872] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 21:51:10.829] [TRACE] - [TechStudent11 @ 127.0.0.1:50872] Handling packet RequestRoomPlayerListPacket
+[2024-05-30 21:51:10.829] [TRACE] - [TechStudent11 @ 127.0.0.1:50872] Sending packet RoomPlayerListPacket (fast)
+[2024-05-30 21:51:15.555] [DEBUG] - removing client: 127.0.0.1:50872
+[2024-05-30 21:53:01.636] [DEBUG] - accepting tcp connection from 127.0.0.1:39870
+[2024-05-30 21:53:01.641] [TRACE] - [127.0.0.1:39870] Handling packet CryptoHandshakeStartPacket
+[2024-05-30 21:53:01.642] [TRACE] - [127.0.0.1:39870] Sending packet CryptoHandshakeResponsePacket (fast)
+[2024-05-30 21:53:01.747] [TRACE] - [127.0.0.1:39870] Handling packet LoginPacket
+[2024-05-30 21:53:01.747] [INFO] - [TechStudent11 (20284359) @ 127.0.0.1:39870] Login successful, platform: Windows x86 (v1.4.0-beta.1, Geode v2.0.0-beta.27)
+[2024-05-30 21:53:01.747] [TRACE] - [TechStudent11 @ 127.0.0.1:39870] Sending packet LoggedInPacket (fast)
+[2024-05-30 21:53:01.960] [TRACE] - [TechStudent11 @ 127.0.0.1:39870] Handling packet KeepaliveTCPPacket
+[2024-05-30 21:53:01.961] [TRACE] - [TechStudent11 @ 127.0.0.1:39870] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 21:53:03.875] [TRACE] - [TechStudent11 @ 127.0.0.1:39870] Handling packet RequestRoomPlayerListPacket
+[2024-05-30 21:53:03.875] [TRACE] - [TechStudent11 @ 127.0.0.1:39870] Sending packet RoomPlayerListPacket (fast)
+[2024-05-30 21:54:02.117] [TRACE] - [TechStudent11 @ 127.0.0.1:39870] Handling packet KeepaliveTCPPacket
+[2024-05-30 21:54:02.117] [TRACE] - [TechStudent11 @ 127.0.0.1:39870] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 21:54:29.228] [TRACE] - [TechStudent11 @ 127.0.0.1:39870] Handling packet DisconnectPacket (sync)
+[2024-05-30 21:54:29.228] [DEBUG] - removing client: 127.0.0.1:39870
+[2024-05-30 21:57:04.986] [DEBUG] - accepting tcp connection from 127.0.0.1:40510
+[2024-05-30 21:57:04.990] [TRACE] - [127.0.0.1:40510] Handling packet CryptoHandshakeStartPacket
+[2024-05-30 21:57:04.993] [TRACE] - [127.0.0.1:40510] Sending packet CryptoHandshakeResponsePacket (fast)
+[2024-05-30 21:57:05.105] [TRACE] - [127.0.0.1:40510] Handling packet LoginPacket
+[2024-05-30 21:57:05.107] [INFO] - [TechStudent11 (20284359) @ 127.0.0.1:40510] Login successful, platform: Windows x86 (v1.4.0-beta.1, Geode v2.0.0-beta.27)
+[2024-05-30 21:57:05.107] [TRACE] - [TechStudent11 @ 127.0.0.1:40510] Sending packet LoggedInPacket (fast)
+[2024-05-30 21:57:05.329] [TRACE] - [TechStudent11 @ 127.0.0.1:40510] Handling packet KeepaliveTCPPacket
+[2024-05-30 21:57:05.330] [TRACE] - [TechStudent11 @ 127.0.0.1:40510] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 21:57:09.065] [TRACE] - [TechStudent11 @ 127.0.0.1:40510] Handling packet RequestRoomPlayerListPacket
+[2024-05-30 21:57:09.065] [TRACE] - [TechStudent11 @ 127.0.0.1:40510] Sending packet RoomPlayerListPacket (fast)
+[2024-05-30 21:57:18.770] [TRACE] - [TechStudent11 @ 127.0.0.1:40510] Handling packet DisconnectPacket (sync)
+[2024-05-30 21:57:18.771] [DEBUG] - removing client: 127.0.0.1:40510
+[2024-05-30 21:58:23.867] [INFO] - Current server stats
+[2024-05-30 21:58:23.869] [INFO] - Player count: 0 (threads: 0, unclaimed: 0)
+[2024-05-30 21:58:23.869] [INFO] - Amount of rooms: 0
+[2024-05-30 21:58:23.870] [INFO] - People in the global room: 0
+[2024-05-30 21:58:23.871] [INFO] - -------------------------------------------
+[2024-05-30 21:58:24.597] [DEBUG] - accepting tcp connection from 127.0.0.1:59776
+[2024-05-30 21:58:24.602] [TRACE] - [127.0.0.1:59776] Handling packet CryptoHandshakeStartPacket
+[2024-05-30 21:58:24.610] [TRACE] - [127.0.0.1:59776] Sending packet CryptoHandshakeResponsePacket (fast)
+[2024-05-30 21:58:24.732] [TRACE] - [127.0.0.1:59776] Handling packet LoginPacket
+[2024-05-30 21:58:24.733] [INFO] - [TechStudent11 (20284359) @ 127.0.0.1:59776] Login successful, platform: Windows x86 (v1.4.0-beta.1, Geode v2.0.0-beta.27)
+[2024-05-30 21:58:24.734] [TRACE] - [TechStudent11 @ 127.0.0.1:59776] Sending packet LoggedInPacket (fast)
+[2024-05-30 21:58:24.939] [TRACE] - [TechStudent11 @ 127.0.0.1:59776] Handling packet KeepaliveTCPPacket
+[2024-05-30 21:58:24.939] [TRACE] - [TechStudent11 @ 127.0.0.1:59776] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 21:58:26.655] [TRACE] - [TechStudent11 @ 127.0.0.1:59776] Handling packet RequestRoomPlayerListPacket
+[2024-05-30 21:58:26.659] [TRACE] - [TechStudent11 @ 127.0.0.1:59776] Sending packet RoomPlayerListPacket (fast)
+[2024-05-30 21:59:24.996] [TRACE] - [TechStudent11 @ 127.0.0.1:59776] Handling packet KeepaliveTCPPacket
+[2024-05-30 21:59:24.997] [TRACE] - [TechStudent11 @ 127.0.0.1:59776] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 22:00:23.209] [TRACE] - [TechStudent11 @ 127.0.0.1:59776] Handling packet RequestPlayerCountPacket
+[2024-05-30 22:00:23.210] [TRACE] - [TechStudent11 @ 127.0.0.1:59776] Sending packet LevelPlayerCountPacket (fast)
+[2024-05-30 22:00:23.223] [TRACE] - [TechStudent11 @ 127.0.0.1:59776] Handling packet RequestPlayerCountPacket
+[2024-05-30 22:00:23.223] [TRACE] - [TechStudent11 @ 127.0.0.1:59776] Sending packet LevelPlayerCountPacket (fast)
+[2024-05-30 22:00:23.429] [TRACE] - [TechStudent11 @ 127.0.0.1:59776] Handling packet DisconnectPacket (sync)
+[2024-05-30 22:00:23.430] [DEBUG] - removing client: 127.0.0.1:59776
+[2024-05-30 22:03:19.643] [DEBUG] - accepting tcp connection from 127.0.0.1:47420
+[2024-05-30 22:03:19.645] [TRACE] - [127.0.0.1:47420] Handling packet CryptoHandshakeStartPacket
+[2024-05-30 22:03:19.662] [TRACE] - [127.0.0.1:47420] Sending packet CryptoHandshakeResponsePacket (fast)
+[2024-05-30 22:03:19.790] [TRACE] - [127.0.0.1:47420] Handling packet LoginPacket
+[2024-05-30 22:03:19.791] [INFO] - [TechStudent11 (20284359) @ 127.0.0.1:47420] Login successful, platform: Windows x86 (v1.4.0-beta.1, Geode v2.0.0-beta.27)
+[2024-05-30 22:03:19.793] [TRACE] - [TechStudent11 @ 127.0.0.1:47420] Sending packet LoggedInPacket (fast)
+[2024-05-30 22:03:20.004] [TRACE] - [TechStudent11 @ 127.0.0.1:47420] Handling packet KeepaliveTCPPacket
+[2024-05-30 22:03:20.004] [TRACE] - [TechStudent11 @ 127.0.0.1:47420] Sending packet KeepaliveTCPResponsePacket (fast)
+[2024-05-30 22:03:22.296] [TRACE] - [TechStudent11 @ 127.0.0.1:47420] Handling packet RequestRoomPlayerListPacket
+[2024-05-30 22:03:22.299] [TRACE] - [TechStudent11 @ 127.0.0.1:47420] Sending packet RoomPlayerListPacket (fast)
+[2024-05-30 22:03:24.411] [TRACE] - [TechStudent11 @ 127.0.0.1:47420] Handling packet RequestRoomPlayerListPacket
+[2024-05-30 22:03:24.411] [TRACE] - [TechStudent11 @ 127.0.0.1:47420] Sending packet RoomPlayerListPacket (fast)
+[2024-05-30 22:03:41.123] [DEBUG] - removing client: 127.0.0.1:47420
+[2024-05-31 15:22:46.024] [INFO] - Current server stats
+[2024-05-31 15:22:46.024] [INFO] - Player count: 0 (threads: 0, unclaimed: 0)
+[2024-05-31 15:22:46.024] [INFO] - Amount of rooms: 0
+[2024-05-31 15:22:46.024] [INFO] - People in the global room: 0
+[2024-05-31 15:22:46.024] [INFO] - -------------------------------------------
+[2024-05-31 15:37:46.024] [INFO] - Current server stats
+[2024-05-31 15:37:46.024] [INFO] - Player count: 0 (threads: 0, unclaimed: 0)
+[2024-05-31 15:37:46.024] [INFO] - Amount of rooms: 0
+[2024-05-31 15:37:46.024] [INFO] - People in the global room: 0
+[2024-05-31 15:37:46.024] [INFO] - -------------------------------------------
+[2024-05-31 16:03:03.048] [INFO] - Current server stats
+[2024-05-31 16:03:03.050] [INFO] - Player count: 0 (threads: 0, unclaimed: 0)
+[2024-05-31 16:03:03.050] [INFO] - Amount of rooms: 0
+[2024-05-31 16:03:03.051] [INFO] - People in the global room: 0
+[2024-05-31 16:03:03.051] [INFO] - -------------------------------------------
+[2024-05-31 16:24:40.947] [INFO] - Current server stats
+[2024-05-31 16:24:40.947] [INFO] - Player count: 0 (threads: 0, unclaimed: 0)
+[2024-05-31 16:24:40.947] [INFO] - Amount of rooms: 0
+[2024-05-31 16:24:40.947] [INFO] - 
